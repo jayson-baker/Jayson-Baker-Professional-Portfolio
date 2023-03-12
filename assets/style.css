@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family: Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: var(--main-background);
     padding: 0;
     margin: 0;
@@ -34,6 +34,7 @@ nav h1 {
     background-color: var(--secondary-background);
     color: var(--text-color);
     padding: 10px;
+    letter-spacing: 0.1em;
 }
 
 nav ul {
@@ -61,7 +62,108 @@ a {
 }
 
 a:hover {
-    background-color: aqua;
+    background-color: slategray;
+}
+
+/*Section (h2) Styling*/
+.section-header {
+    display: inline-flex;
+    justify-content: center;
+    font-size: 450%;
+    letter-spacing: .1em;
+    border-bottom: 3px solid grey;
+    height: 80px;
+    width: 360px;
+}
+
+/*About Me Section Styling*/
+/*Personal Pictue Styling*/
+.personal-pic {
+    display: flexbox;
+    float: left;
+    height: 45%;
+    width: 360px;
+    padding: 0 20px 20px 0;
+}
+
+.about-me {
+    display: flexbox;
+    position: static;
+    color: var(--text-color);
+    padding: 10px;
+    border-bottom: 3px solid grey;
+    width: 100%;
+}
+
+.about-me-text {
+    padding: 10px;
+    font-size: 150%;
+}
+
+/*Work Section Styling*/
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: static;
+    color: var(--text-color);
+    padding: 10px;
+    border-bottom: 3px solid grey;
+    width: 100%;
+}
+
+.work-card {
+    display: flex;
+    border: 2px dashed grey;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
+
+.work-card:hover {
+    box-shadow: 10px 5px 5px var(--secondary-background);
+}
+
+.work-card-header {
+    position: fixed;
+    color: var(--text-color);
+    margin-top: 0;
+    background-color: transparent;
+}
+
+.minor-card-pic {
+    display: flex;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.work-card-big {
+    border: 2px dashed grey;
+    height: 400px;
+    width: 400px;
+    margin: 5px;
+}
+
+.work-card-big:hover {
+    box-shadow: 10px 5px 5px var(--secondary-background);
+}
+
+.big-work-card-header {
+    position: fixed;
+    color: var(--text-color);
+    margin-top: 0;
+    background-color: transparent;
+    font-size: 200%;
+}
+
+.big-card-pic {
+    display: flex;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }
 
 footer {
@@ -79,10 +181,15 @@ footer ul {
 footer ul li {
     color: var(--text-color);
     padding: 20px;
+    font-size: 150%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
     header {
       width: 75%;
     }
   }
+
+@media screen and (max-width: 768px) {
+   
+}
