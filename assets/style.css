@@ -13,9 +13,12 @@
 }
 
 /*Element styling*/
-a {
-    background-color: var(--secondary-background);
-    color: var(--text-color);
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 /*Nav bar Styling*/
@@ -52,8 +55,9 @@ nav ul li {
     float: right;
 }
 
-a {    
+.navbar-link {    
     background-color: var(--secondary-background);
+    color: var(--text-color);
     text-decoration: none;
     display: block;
     padding: 16px;
@@ -74,6 +78,7 @@ a:hover {
     border-bottom: 3px solid grey;
     height: 80px;
     width: 360px;
+    color: white;
 }
 
 /*About Me Section Styling*/
@@ -81,7 +86,7 @@ a:hover {
 .personal-pic {
     display: flexbox;
     float: left;
-    height: 45%;
+    height: 100%;
     width: 360px;
     padding: 0 20px 20px 0;
 }
@@ -107,17 +112,26 @@ a:hover {
     flex-direction: row;
     position: static;
     color: var(--text-color);
-    padding: 10px;
-    border-bottom: 3px solid grey;
     width: 100%;
+    margin: 5px 10px 5px 10px;
+    gap: 10px;
+}
+
+.work-hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px 10px 5px 10px;
+    gap: 10px;
 }
 
 .work-card {
     display: flex;
-    border: 2px dashed grey;
+    flex-wrap: wrap;
+    outline: 2px dashed grey;
     height: 200px;
     width: 200px;
-    margin: 5px;
+    border-radius: 20px;
 }
 
 .work-card:hover {
@@ -125,9 +139,10 @@ a:hover {
 }
 
 .work-card-header {
-    position: fixed;
+    position: absolute;
     color: var(--text-color);
     margin-top: 0;
+    margin-left: 22px;
     background-color: transparent;
 }
 
@@ -137,13 +152,17 @@ a:hover {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
+/*Big Work Card*/
 .work-card-big {
-    border: 2px dashed grey;
-    height: 400px;
+    outline: 2px dashed grey;
+    height: 410px;
     width: 400px;
-    margin: 5px;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 .work-card-big:hover {
@@ -151,9 +170,10 @@ a:hover {
 }
 
 .big-work-card-header {
-    position: fixed;
+    position: absolute;
     color: var(--text-color);
     margin-top: 0;
+    margin-left: 69px;
     background-color: transparent;
     font-size: 200%;
 }
@@ -162,8 +182,9 @@ a:hover {
     display: flex;
     background-position: center;
     width: 400px;
-    height: 400px;
+    height: 410px;
     object-fit: cover;
+    border-radius: 25px;
 }
 
 footer {
@@ -182,6 +203,7 @@ footer ul li {
     color: var(--text-color);
     padding: 20px;
     font-size: 150%;
+    letter-spacing: .1em;
 }
 
 @media screen and (max-width: 992px) {
