@@ -1,217 +1,235 @@
 /*Variables*/
 :root {
-    --main-background: #1D0929;
-    --secondary-background: #414073;
-    --text-color: white;
+  --main-background: #1d0929;
+  --secondary-background: #414073;
+  --text-color: white;
 }
 
 * {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: var(--main-background);
-    padding: 0;
-    margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--main-background);
+  padding: 0;
+  margin: 0;
 }
 
 /*Element styling*/
 
 main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+}
+
+.overall-content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
 }
 
 /*Nav bar Styling*/
 nav {
-    display: flex;
-    position: sticky;
-    background-color: var(--secondary-background);
-    width: 100%;
-    height: 50px;
-    top: 0;
-    overflow: hidden;
+  display: flex;
+  position: sticky;
+  background-color: var(--secondary-background);
+  width: 100%;
+  height: 50px;
+  top: 0;
+  overflow: hidden;
 }
 
-nav h1 {    
-    display: flex;
-    background-color: var(--secondary-background);
-    color: var(--text-color);
-    padding: 10px;
-    letter-spacing: 0.1em;
+nav h1 {
+  display: flex;
+  background-color: var(--secondary-background);
+  color: var(--text-color);
+  padding: 10px;
+  letter-spacing: 0.1em;
 }
 
 nav ul {
-    position: absolute;
-    right: 0px;
-    background-color: var(--secondary-background);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    height: 50px;
+  position: absolute;
+  right: 0px;
+  background-color: var(--secondary-background);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 50px;
 }
 
 nav ul li {
-    float: right;
+  float: right;
 }
 
-.navbar-link {    
-    background-color: var(--secondary-background);
-    color: var(--text-color);
-    text-decoration: none;
-    display: block;
-    padding: 16px;
-    text-align: center;
-    border-left: 1px solid gray;
+.navbar-link {
+  background-color: var(--secondary-background);
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 16px;
+  text-align: center;
+  border-left: 1px solid gray;
 }
 
 a:hover {
-    background-color: slategray;
+  background-color: slategray;
 }
 
 /*Section (h2) Styling*/
 .section-header {
-    display: inline-flex;
-    justify-content: center;
-    font-size: 450%;
-    letter-spacing: .1em;
-    border-bottom: 3px solid grey;
-    height: 80px;
-    width: 360px;
-    color: white;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 450%;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid grey;
+  height: 80px;
+  width: 360px;
+  color: white;
 }
 
 /*About Me Section Styling*/
 /*Personal Pictue Styling*/
 .personal-pic {
-    display: flexbox;
+  display: flexbox;
+  float: left;
+  height: 100%;
+  width: 360px;
+  padding: 0 20px 20px 0;
+}
+
+.float-left {
     float: left;
-    height: 100%;
-    width: 360px;
-    padding: 0 20px 20px 0;
 }
 
 .about-me {
-    display: flexbox;
-    position: static;
-    color: var(--text-color);
-    padding: 10px;
-    border-bottom: 3px solid grey;
-    width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  position: static;
+  color: var(--text-color);
+  padding: 10px;
+  border-bottom: 3px solid grey;
+  width: 100%;
 }
 
 .about-me-text {
-    padding: 10px;
-    font-size: 150%;
+  padding: 10px;
+  font-size: 125%;
 }
 
 /*Work Section Styling*/
 .work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: static;
-    color: var(--text-color);
-    width: 100%;
-    margin: 5px 10px 5px 10px;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--text-color);
+  width: 100%;
+  margin: 5px 10px 5px 10px;
+  gap: 10px;
 }
 
 .work-hero {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 5px 10px 5px 10px;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 5px 10px 5px 10px;
+  gap: 10px;
 }
 
 .work-card {
-    display: flex;
-    flex-wrap: wrap;
-    outline: 2px dashed grey;
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px dashed grey;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
 }
 
 .work-card:hover {
-    box-shadow: 10px 5px 5px var(--secondary-background);
+  box-shadow: 10px 5px 5px var(--secondary-background);
 }
 
 .work-card-header {
-    position: absolute;
-    color: var(--text-color);
-    margin-top: 0;
-    margin-left: 22px;
-    background-color: transparent;
+  position: absolute;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-left: 22px;
+  background-color: transparent;
 }
 
 .minor-card-pic {
-    display: flex;
-    background-position: center;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-    overflow: hidden;
+  display: flex;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 /*Big Work Card*/
 .work-card-big {
-    outline: 2px dashed grey;
-    height: 410px;
-    width: 400px;
-    border-radius: 25px;
-    overflow: hidden;
+  outline: 2px dashed grey;
+  height: 410px;
+  width: 400px;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .work-card-big:hover {
-    box-shadow: 10px 5px 5px var(--secondary-background);
+  box-shadow: 10px 5px 5px var(--secondary-background);
 }
 
 .big-work-card-header {
-    position: absolute;
-    color: var(--text-color);
-    margin-top: 0;
-    margin-left: 69px;
-    background-color: transparent;
-    font-size: 200%;
+  position: absolute;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-left: 69px;
+  background-color: transparent;
+  font-size: 200%;
 }
 
 .big-card-pic {
-    display: flex;
-    background-position: center;
-    width: 400px;
-    height: 410px;
-    object-fit: cover;
-    border-radius: 25px;
+  display: flex;
+  background-position: center;
+  width: 400px;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 footer ul {
-    display: inline-flex;
-    list-style-type: none;
+  display: inline-flex;
+  list-style-type: none;
 }
 
 footer ul li {
-    color: var(--text-color);
-    padding: 20px;
-    font-size: 150%;
-    letter-spacing: .1em;
+  color: var(--text-color);
+  padding: 20px;
+  font-size: 150%;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 992px) {
-    header {
-      width: 75%;
-    }
+  header {
+    width: 75%;
   }
+}
 
 @media screen and (max-width: 768px) {
-   
+  .work-hero {
+    flex-direction: row;
+  }
 }

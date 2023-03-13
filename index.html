@@ -1,83 +1,132 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Created by" content="Jayson Baker">
-        <meta name="description" content="This is my Professional Portfolio!">
-        <link rel="stylesheet" href="./assets/reset.css">
-        <link rel="stylesheet" href="./assets/style.css">
-        <title>My Professional Portfolio</title>
-    </head>
-    
-    <body>
-        <!--TODO: Make a Nav bar that has links to each section on the page-->
-        <nav>
-            <h1>Jayson C. Baker</h1>
-            <ul>
-                <li>
-                    <!--TODO: Make the Links Work!-->
-                    <a href="#contact-info" class="navbar-link">Contact Info</a>
-                </li>
-                <li>
-                    <a href="#work-link" class="navbar-link">Work</a>
-                </li>
-                <li>
-                    <a href="#about-me" class="navbar-link">About Me</a>
-                </li>
-            </ul>
-        </nav>        
-        <!--TODO: Make an about me paragraph-->
-        <section id="about-me" class="about-me">
-            <!--TODO: Add portfolio picture-->
-        <img src="./assets/images/IMG_23631.jpg" alt="Picture of Jayson" class="personal-pic">
-            <h2 class="section-header">About Me</h2>
-            <p class="about-me-text">Brand new to Web Development, but eager to learn and grow my skills. I am a quick learner and have a true passion for coding! Most of my experience, as of now, is with JavaScript and React making discord bots and other personal projects for day to day use. Outside of the tech world, I am a Father of three children, a four year old terror and a pair of eighteen month old twins (one boy, one girl). Between the little ones, my Wife, a more than full time job and now classes on top of all of it my days are always full! I love it! Late nights of coding and research are what truly excite me and I can not wait to tackle my next project.</p>
-        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Created by" content="Jayson Baker" />
+    <meta name="description" content="This is my Professional Portfolio!" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>My Professional Portfolio</title>
+  </head>
 
-        <h2 class="section-header" id="work-link">WORK</h2>
+  <body>
+    <!--TODO: Make a Nav bar that has links to each section on the page-->
+    <nav>
+      <h1>Jayson C. Baker</h1>
+      <ul>
+        <li>
+          <!--TODO: Make the Links Work!-->
+          <a href="#contact-info" class="navbar-link">Contact Info</a>
+        </li>
+        <li>
+          <a href="#work-link" class="navbar-link">Work</a>
+        </li>
+        <li>
+          <a href="#about-me-link" class="navbar-link">About Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="overall-content">
+    <!--TODO: Make an about me paragraph-->
+    <section id="about-me-link" class="about-me">
+      <!--TODO: Add portfolio picture-->
+      <img class="float-left"
+        src="./assets/images/IMG_23631.jpg"
+        alt="Picture of Jayson"
+        class="personal-pic"
+      />
+      <h2 class="section-header">About Me</h2>
+      <p class="about-me-text">
+        Brand new to Web Development, but eager to learn and grow my skills. I
+        am a quick learner and have a true passion for coding! Most of my
+        experience, as of now, is with JavaScript and React making discord bots
+        and other personal projects for day to day use. Outside of the tech
+        world, I am a Father of three children, a four year old terror and a
+        pair of eighteen month old twins (one boy, one girl). Between the little
+        ones, my Wife, a more than full time job and now classes on top of all
+        of it my days are always full! I love it! Late nights of coding and
+        research are what truly excite me and I can not wait to tackle my next
+        project.
+      </p>
+    </section>
+
+    <h2 class="section-header" id="work-link">WORK</h2>
     <main>
-        <section class="work-hero"> 
-            <!--TODO: Body should have cards that have links to work that I have done. (Coding Projects-Click to see live page)-->
-            <div class="work-card-big">
-                <h3 class="big-work-card-header">Main Project Here</h3> 
-                <img src="./assets/images/michael-dziedzic-qDG7XKJLKbs-unsplash.jpg" alt="TBD" class="big-card-pic">               
-            </div>
-        </section>
-        <section class="work-hero">
-            <div class="work-card"> 
-                <h3 class="work-card-header">Minor Project Here</h3> 
-                <img src="./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="TBD" class="minor-card-pic">              
-            </div>
-            <div class="work-card"> 
-                <h3 class="work-card-header">Minor Project Here</h3>
-                <img src="./assets/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" alt="TBD" class="minor-card-pic">                 
-            </div>
-        </section>
-        <section class="work">
-            <div class="work-card">          
-                <h3 class="work-card-header">Minor Project Here</h3>
-                <img src="./assets/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" alt="TBD" class="minor-card-pic">       
-            </div>
-            <div class="work-card">          
-                <h3 class="work-card-header">Minor Project Here</h3>
-                <img src="./assets/images/max-duzij-qAjJk-un3BI-unsplash.jpg" alt="TBD" class="minor-card-pic">        
-            </div>
-            <div class="work-card">          
-                <h3 class="work-card-header">Minor Project Here</h3>
-                <img src="./assets/images/roman-synkevych-vXInUOv1n84-unsplash.jpg" alt="TBD" class="minor-card-pic">        
-            </div>            
-        </section>
+      <section class="work-hero">
+        <!--TODO: Body should have cards that have links to work that I have done. (Coding Projects-Click to see live page)-->
+        <div class="work-card-big">
+          <h3 class="big-work-card-header">Refactoring-Code</h3>
+          <a
+            href="https://jayson-baker.github.io/Challenge-1---Refactoring-Code/"
+            ><img
+              src="./assets/images/michael-dziedzic-qDG7XKJLKbs-unsplash.jpg"
+              alt="TBD"
+              class="big-card-pic"
+          /></a>
+        </div>
+      </section>
+      <section class="work-hero">
+        <div class="work-card">
+          <h3 class="work-card-header">Minor Project Here</h3>
+          <img
+            src="./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
+            alt="TBD"
+            class="minor-card-pic"
+          />
+        </div>
+        <div class="work-card">
+          <h3 class="work-card-header">Minor Project Here</h3>
+          <img
+            src="./assets/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
+            alt="TBD"
+            class="minor-card-pic"
+          />
+        </div>
+      </section>
+      <section class="work">
+        <div class="work-card">
+          <h3 class="work-card-header">Minor Project Here</h3>
+          <img
+            src="./assets/images/james-harrison-vpOeXr5wmR4-unsplash.jpg"
+            alt="TBD"
+            class="minor-card-pic"
+          />
+        </div>
+        <div class="work-card">
+          <h3 class="work-card-header">Minor Project Here</h3>
+          <img
+            src="./assets/images/max-duzij-qAjJk-un3BI-unsplash.jpg"
+            alt="TBD"
+            class="minor-card-pic"
+          />
+        </div>
+        <div class="work-card">
+          <h3 class="work-card-header">Minor Project Here</h3>
+          <img
+            src="./assets/images/roman-synkevych-vXInUOv1n84-unsplash.jpg"
+            alt="TBD"
+            class="minor-card-pic"
+          />
+        </div>
+      </section>
     </main>
-        <!--TODO: Make the page mobile friendy (@media-query)-->
-        <!--TODO: Add conact info at bottom. Maybe in footer?-->
-        <footer id="contact-info">
-            <ul>
-                <!--TODO: Make Email and Github links work-->
-                <li>E-mail: Bakej07@gmail.com</li>
-                <li>GitHub: <a href="https://github.com/jayson-baker">https://github.com/jayson-baker</a></li>
-                <li>Phone: 555-555-5555</li>
-            </ul>
-        </footer>
-    </body>
+    <!--TODO: Make the page mobile friendy (@media-query)-->
+    <!--TODO: Add conact info at bottom. Maybe in footer?-->
+    <footer id="contact-info">
+      <ul>
+        <!--TODO: Make Email and Github links work-->
+        <li>E-mail: Bakej07@gmail.com</li>
+        <li>
+          GitHub:
+          <a href="https://github.com/jayson-baker"
+            >https://github.com/jayson-baker</a
+          >
+        </li>
+        <li>Phone: 555-555-5555</li>
+      </ul>
+    </footer>
+</div>
+  </body>
 </html>
