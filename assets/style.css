@@ -10,6 +10,7 @@
   background-color: var(--main-background);
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 /*Element styling*/
@@ -20,7 +21,7 @@ main {
   flex-direction: row;
   justify-content: center;
   width: 75%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .overall-content {
@@ -32,6 +33,10 @@ main {
 }
 
 /*Nav bar Styling*/
+
+.small-view-header {
+  display: none;
+}
 nav {
   display: flex;
   position: sticky;
@@ -43,7 +48,7 @@ nav {
 }
 
 nav h1 {
-  display: flex;
+  display: inline-block;
   background-color: var(--secondary-background);
   color: var(--text-color);
   padding: 10px;
@@ -71,7 +76,6 @@ nav ul li {
   text-decoration: none;
   display: block;
   padding: 16px;
-  text-align: center;
   border-left: 1px solid gray;
 }
 
@@ -89,37 +93,31 @@ a:hover {
   height: 80px;
   width: 360px;
   color: white;
+  margin: 5px 0;
+}
+
+
+/*Personal Pictue Styling*/
+.personal-pic , .about-me-text {
+  height: auto;
+  align-self: center;
+  font-size: 125%;
+  width: 45%;
+  margin: 5px 0;
 }
 
 /*About Me Section Styling*/
-/*Personal Pictue Styling*/
-.personal-pic {
-  display: flexbox;
-  float: left;
-  height: 100%;
-  width: 360px;
-  padding: 0 20px 20px 0;
-}
-
-.float-left {
-    float: left;
-}
-
 .about-me {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  position: static;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   color: var(--text-color);
-  padding: 10px;
   border-bottom: 3px solid grey;
   width: 100%;
+  gap: 5%;
 }
 
-.about-me-text {
-  padding: 10px;
-  font-size: 125%;
-}
 
 /*Work Section Styling*/
 .work {
@@ -148,10 +146,13 @@ a:hover {
   height: 200px;
   width: 200px;
   border-radius: 20px;
+  filter: sepia(40) blur(2px);
+  transition: 1s;
 }
 
 .work-card:hover {
   box-shadow: 10px 5px 5px var(--secondary-background);
+  filter: none;
 }
 
 .work-card-header {
@@ -203,10 +204,10 @@ a:hover {
   border-radius: 25px;
 }
 
+/*Footer Styling*/
 footer {
   display: flex;
   justify-content: center;
-  text-align: center;
   width: 100%;
 }
 
@@ -222,14 +223,50 @@ footer ul li {
   letter-spacing: 0.1em;
 }
 
-@media screen and (max-width: 992px) {
-  header {
-    width: 75%;
+/*Changes for smaller screens*/
+@media screen and (max-width: 1154px) {
+
+  .about-me , .about-me-text {
+    width: 100%
   }
+
+  .personal-pic{
+    width: 360px;
+  }
+
+  .work-hero {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  /*Extending the last card*/
+  .work-card:nth-child(3) , .work-card:nth-child(3) img {
+    width: 410px;
+   
+  }
+
 }
 
 @media screen and (max-width: 768px) {
-  .work-hero {
-    flex-direction: row;
+  main , .overall-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .large-view-header{
+    display: none;
+  }
+
+  .small-view-header{
+    display: inline-block;
+    font-size: 1em;
+    align-self: center;
   }
 }
