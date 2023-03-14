@@ -86,13 +86,17 @@ a:hover {
 .section-header {
   display: inline-flex;
   justify-content: center;
-  font-size: 450%;
+  font-size: 400%;
   letter-spacing: 0.1em;
   border-bottom: 3px solid grey;
   height: 80px;
   width: 360px;
   color: white;
   margin: 5px 0;
+}
+
+.footer {
+  font-size: 350%;
 }
 
 /*Personal Pictue Styling*/
