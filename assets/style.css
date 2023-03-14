@@ -98,12 +98,20 @@ a:hover {
 
 
 /*Personal Pictue Styling*/
+.personal-pic {
+  max-height: 360px;
+  max-width: 410px;
+}
+
 .personal-pic , .about-me-text {
   height: auto;
   align-self: center;
   font-size: 125%;
   width: 45%;
   margin: 5px 0;
+  object-fit: cover;
+  object-position: 15% 15%;
+  text-align: justify;
 }
 
 /*About Me Section Styling*/
@@ -147,7 +155,7 @@ a:hover {
   width: 200px;
   border-radius: 20px;
   filter: sepia(40) blur(2px);
-  transition: 1s;
+  transition: filter 1s;
 }
 
 .work-card:hover {
@@ -226,8 +234,12 @@ footer ul li {
 /*Changes for smaller screens*/
 @media screen and (max-width: 1154px) {
 
-  .about-me , .about-me-text {
+  .about-me{
     width: 100%
+  }
+
+  .about-me-text {
+    width: 80%
   }
 
   .personal-pic{
@@ -247,8 +259,7 @@ footer ul li {
 
   /*Extending the last card*/
   .work-card:nth-child(3) , .work-card:nth-child(3) img {
-    width: 410px;
-   
+    width: 410px;   
   }
 
 }
