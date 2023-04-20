@@ -198,7 +198,7 @@ a:hover {
 
 .big-work-card-header {
   position: absolute;
-  color: var(--text-color);
+  color: black;
   margin-top: 0;
   margin-left: 69px;
   background-color: transparent;
