@@ -265,6 +265,10 @@ footer ul li {
   }
 }
 
+#fitness-forecastCard {
+  color: black;
+}
+
 @media screen and (max-width: 768px) {
   main,
   .overall-content {
